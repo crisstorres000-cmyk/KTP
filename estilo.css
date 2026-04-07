@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*body {
+
+background-color: rgb(239, 239, 239);
+
+}*/
+
+body {
+        background-image: url('IMG_20260228_203521.jpg');
+
+        background-repeat: no-repeat;
+
+        background-size: 100%;
+
+        background-position: center;
+
+        background-attachment: fixed;
+
+        background-color: #cccccc;
+
+        font-family: Arial, sans-serif;
+    }
+
+@keyframes entradaSuave {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+
+    font-family: Type Machine, monospace;
+    text-align: center;
+    background-color: rgb(180, 164, 145);
+    color:black;
+    padding: 20px;
+
+}
+
+nav ul {
+
+    background-color: rgb(213, 213, 213); /* Da un color de fondo gris claro a la sección de los menús */
+    width: 100%; /* Da un tamaño del 100% a la parte de los menús para que ocupe todo el largo de la pantalla */
+    list-style: none; /* Le quita las viñetas de lista a los menús */
+    text-align: center; /* Alinea el texto de los menús al centro */
+
+}
+
+nav li { 
+
+    display: inline-flex; /* alínea el texto de los menús uno junto al otro */
+
+}
+
+nav a { /* Modifica el estilo del texto de los menús */
+
+    text-decoration: none; /* Quita la raya azul de debajo de los enlaces de los menús */
+    color:black; /* Cambia el color del texto de los menús a azul */
+    padding: 10px; /* Da una separación de 10px entre menú y menú */
+    width: 150px; /* Da un tamaño de 150px al texto del menú */
+
+}
+
+nav li:hover { /* Hace que al pasar el cursor sobre una parte del menú, esta parte se resalte en un color diferente */
+
+    background-color: rgb(247, 255, 176); /*cambia el color a amarillo pastel*/
+    transition: all 0.5s ease; /* Hace que el cambio de color sea suave y gradual en lugar de instantáneo */
+}
+
+.contenido {
+
+display: flex;
+margin-bottom: -50px;
+
+}
+
+.secciones {
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 70%;
+    padding: 40px;
+    z-index: 10;
+
+    animation: entradaSuave 1s ease-out forwards;
+
+}
+
+.Hola{
+
+    position: relative;
+    width: 300%;
+    left: 130px;
+
+    z-index: 40;
+
+}
+
+.logo {
+    
+    position: relative;
+    left: 130px;
+    top: 30px;
+
+    img {
+
+    width: 45%;
+    height: 43%;
+    border-radius: 30%;
+    position: relative;
+    left: 50%;
+    top: 70px;
+    z-index: 3;
+
+    animation: entradaSuave 1s ease-out 0.5s forwards;
+    opacity: 0;
+
+    }
+
+    .papel {
+
+        width: 18%;
+        height: 43%;
+        position: relative;
+        z-index: 2;
+        rotate: 90deg;
+        left: 150px;
+        top: 170px;
+
+    }
+
+    .B {
+
+        width: 40%;
+        height: 40%;
+        position: relative;
+        z-index: 1;
+        left: 75%;
+        top: -180px;
+        rotate: 180deg;
+
+    }
+
+    .C {
+
+        width: 35%;
+        height: 65%;
+        position: relative;
+        z-index: -20;
+        left: -5%;
+        top: -120px;
+        rotate: 90deg;
+
+    }
+
+
+}
+
+.Correo {
+
+    width: 100%;
+
+    animation: entradaSuave 1s ease-out 0.5s forwards;
+    opacity: 0;
+
+ div {
+
+    background-color: rgb(116, 110, 97);
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 39%;
+    Width: 20%;
+    height: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+a{
+
+    position: relative;
+    margin-left: 45%;
+    top: -35px;
+    text-decoration: none;
+    color: #cccccc;
+
+}
+
+}
+
+.Correo:hover {
+
+    div{
+    background-color: rgb(255, 252, 172);
+    transform: scale(1.1);
+    transition: all 0.8s ease;
+    }
+
+    a{
+    color: rgb(10, 7, 2);
+    transform: scale(1.1);
+    }
+
+}
+
+footer {
+
+    position: relative;
+    width: 100%;
+    height: 170px;
+    max-width: 100%;
+    max-height: 100%;
+    bottom: -60px;
+    background-color: rgb(10, 7, 2);
+    color:rgb(213, 213, 213);
+
+}
+
+footer p {
+
+    text-align: center;
+    padding: 70px;
+
+}
