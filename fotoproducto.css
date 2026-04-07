@@ -1,0 +1,125 @@
+*{
+
+    padding: 0;
+    margin: 0;
+
+}
+
+/*body {
+
+background-color: rgb(239, 239, 239);
+
+}*/
+
+body {
+        background-image: url('IMG_20260228_203521.jpg');
+
+        background-repeat: no-repeat;
+
+        background-size: 100%;
+
+        background-position: center;
+
+        background-attachment: fixed;
+
+        background-color: #cccccc;
+
+        font-family: Arial, sans-serif;
+    }
+
+@keyframes entradaSuave {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+
+    text-align: center;
+    background-color: rgb(180, 164, 145);
+    font-family: Type Machine, monospace;
+    color:black;
+    padding: 20px;
+}
+
+nav ul {
+
+    margin-top: 0px;
+    background-color: rgb(213, 213, 213);
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 10%;
+
+}
+
+nav li { 
+
+    display: inline-flex;
+
+}
+
+nav a {
+
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    width: 150px;
+
+}
+
+nav li:hover {
+
+    background-color: rgb(247, 255, 176);
+    transition: all 0.5s ease;
+}
+
+p {
+
+    text-align: center;
+    margin-top: 20px;
+    Width: 100%;
+
+    animation: entradaSuave 1s ease-out 0.5s forwards;
+    opacity: 0;
+
+}
+
+.Ej { 
+
+    text-align: center;
+    margin-top: 25px;
+
+    animation: entradaSuave 1s ease-out 0.5s forwards;
+    opacity: 0;
+
+    img{
+
+        width: 20%;
+        height: auto;
+        margin: 1%;
+
+    }
+
+    div{
+
+        margin-top: 7%;
+        margin-bottom: 4%;
+        filter: blur(3px);
+
+    }
+
+}
+
+div:hover {
+
+width: 100%;
+filter: blur(0px);
+transition: all 0.3s ease;
+
+}
